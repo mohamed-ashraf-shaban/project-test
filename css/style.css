@@ -906,7 +906,6 @@ img, video {
         flex-direction: column;
         background: #222;
         position: absolute;
-        
         top: 60px;
         left: 0;
         width: 100%;
@@ -914,8 +913,9 @@ img, video {
     }
     nav .nav-links ul.active {
         display: flex;
-        
     }
-    nav .nav-links ul li{
-        padding:12px 0;
+    nav .nav-links ul li {
+        padding: 15px 0;
+        text-align: center;
+    }
 }
