@@ -914,6 +914,8 @@ img, video {
     }
     nav .nav-links ul.active {
         display: flex;
-        padding:20px 0;
+        
     }
+    nav .nav-links ul li{
+        padding:12px 0;
 }
