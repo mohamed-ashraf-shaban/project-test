@@ -906,6 +906,7 @@ img, video {
         flex-direction: column;
         background: #222;
         position: absolute;
+        padding:20px 0;
         top: 60px;
         left: 0;
         width: 100%;
