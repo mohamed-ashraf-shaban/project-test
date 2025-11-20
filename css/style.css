@@ -771,3 +771,147 @@ footer .footer-box .policy a:hover{
    
 }
 /* end */
+/* Add for extra small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+    .container {
+        width: 98%;
+        padding: 0 5px;
+    }
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    .main-header p,
+    .main-header .typeing {
+        font-size: 1rem;
+    }
+    .about-me,
+    .services,
+    .resumes,
+    .portfolio,
+    .testemonials,
+    .contact-us {
+        padding: 40px 0;
+    }
+    .inner-heading p {
+        font-size: 22px;
+    }
+    .about-me .main-about .left-about,
+    .about-me .main-about .right-about,
+    .services-container .services-box,
+    .resumes .resumes-container .resume-box,
+    .progress-container .progress-box,
+    .portfolio .parent-container .portfolio-container,
+    .address,
+    .send-note {
+        width: 100% !important;
+        padding: 0 5px;
+    }
+    .statistic .stat-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .inner-testem {
+        padding: 20px;
+    }
+    .portfolio ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio ul li {
+        padding: 8px;
+    }
+    .testemonial-box {
+        flex-direction: column;
+    }
+    .testem {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .head-box img {
+        width: 40px;
+        height: 40px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+    nav .logo,
+    nav .nav-links {
+        width: 100%;
+        text-align: center;
+    }
+    .btn-hire,
+    .cv button,
+    .about-me .main-about .right-about button,
+    .send-note button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+}
+
+/* Make images fluid */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ...existing code... */
+/* Hamburger menu styles */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px auto;
+    width: 30px;
+}
+.nav-toggle span {
+    height: 4px;
+    background: #20C997;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    display: block;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 10px 20px;
+    }
+    .logo {
+        width: auto;
+        margin-right: auto;
+    }
+    .nav-toggle {
+        display: flex;
+        margin: 0;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
+    }
+    .nav-links {
+        width: 100%;
+    }
+    nav .nav-links ul {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    nav .nav-links ul.active {
+        display: flex;
+    }
+}
